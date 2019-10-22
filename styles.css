@@ -1,8 +1,35 @@
+
+
+/* General */
 body{
-	padding-top:25em;
-	text-align:center;
 	background-color:black;
 }
+/*Header */
+header{
+	margin-top:2em;
+	padding-top:3em;
+	padding-bottom:3em;
+	text-align:center;
+	background-color:white;
+	color:black;
+}
+
+/*Flex Container */
+.flex-container{
+	margin-top:2em;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	background-color:white;
+}
+.flex-container > div{
+	color:black;
+	width:100px;
+	margin:10px;
+	text-align:center;
+}
 p{
+	text-align:center;
+	font-family: 'Be Vietnam', sans-serif;
 	color:white;
 }
