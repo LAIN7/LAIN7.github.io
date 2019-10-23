@@ -1,0 +1,92 @@
+/*        
+        Name: Daniel Shabura
+        File:styles.css
+        Assignment:A Tale of Two Calendar Styles
+        Date:9/29/19
+*/
+body{
+    text-align:center;
+    padding:1em;
+    color:darkgreen;
+    background-color:lightgray;
+}
+
+nav{
+    color:#fff;
+    float:right;
+    font-size:4em;
+}
+nav > a:link, a:visited{
+    text-decoration: none;
+    color:white;
+}
+nav > a:hover{
+    text-decoration:underline;
+    color:darkcyan;
+}
+header{
+    text-align:center;
+    font-size:5em;
+    padding:1em;
+}
+img{
+    width:50%;
+}
+
+
+/* Label Grid */
+
+.labelsGrid{
+    text-align:center;
+    font-size:2em;
+    padding:1em;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color:#444;
+    color:#ddd;
+}
+
+
+/* Days Grid */
+.daysGrid{
+    text-align:center;
+    font-size:2em;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.daysGrid > div{
+    background-color:#eee;
+    padding:1em;
+}
+.daysGrid>div:nth-child(odd){
+    background-color:#ddd;
+}
+
+/* Outliers */
+.daysGrid > div:nth-child(1), .daysGrid > div:nth-child(33), .daysGrid > div:nth-child(34), .daysGrid > div:nth-child(35), .daysGrid > div:nth-child(36), .daysGrid > div:nth-child(37), .daysGrid > div:nth-child(38), .daysGrid > div:nth-child(39), .daysGrid > div:nth-child(40), .daysGrid > div:nth-child(41), .daysGrid > div:nth-child(42){
+    text-align:center;
+    background-color:#bbb;
+}
+.holiday{
+    text-align:center;
+    color:#fff;
+}
+/* footer */
+
+footer{
+    color:#fff;
+    float:right;
+    font-size:3em;
+}
+footer > a:link, a:visited{
+    text-decoration: none;
+    color:white;
+}
+footer > a:hover{
+    text-decoration:underline;
+    color:darkcyan;
+}
+footer >#sun{
+    width:2em;
+    float:right;
+}

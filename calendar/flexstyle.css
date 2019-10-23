@@ -1,0 +1,104 @@
+/*        
+        Name: Daniel Shabura
+        File:flexstyle.css
+        Assignment:A Tale of Two Calendar Styles
+        Date:9/29/19
+*/
+body{
+    background-color:lightsalmon;
+    color:darkred;
+    text-align:center;
+    margin:auto;
+    
+}
+nav{
+    text-align:center;
+}
+nav > a:link, a:visited{
+    text-decoration: none;
+    color:white;
+}
+nav > a:hover{
+    text-decoration:underline;
+    color:darkcyan;
+}
+header{
+    text-align:center;
+    font-size:5em;
+    padding:1em;
+}
+.flexContainer{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+.sunday{
+    background-color:lightblue;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+.sunday > div{
+    margin:auto;
+}
+.monday{
+    background-color:lightcoral;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+.monday >div{
+    margin:auto;
+}
+.tuesday{
+    background-color:lightcyan;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+.tuesday >div{
+    margin:auto;
+}
+.wednesday{
+    background-color:lightgoldenrodyellow;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+.wednesday >div{
+    margin:auto;
+}
+.thursday{
+    background-color:lightgray;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+.thursday >div{
+    margin:auto;
+}
+.friday{
+    background-color:lightgreen;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+.friday >div {
+    margin:auto;
+}
+.saturday{
+    background-color:lightpink;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+.saturday >div{
+    margin:auto;
+}
+img{
+    text-align:center;
+    width:10%
+}
+footer >img{
+    width:2em;
+}
