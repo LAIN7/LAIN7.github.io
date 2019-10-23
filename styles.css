@@ -2,6 +2,7 @@
 
 /* General */
 body{
+	font-size:20px;
 	background-color:black;
 }
 /*Header */
@@ -33,10 +34,15 @@ p{
 	font-family: 'Be Vietnam', sans-serif;
 	color:white;
 }
+a:visited{
+	color:red;
+}
+a, a:hover{
+	color:blue;
+}
 
-.v1{
-	position:absolute;
-	z-index:-1;
-	border-left:1000px solid #ff0000;
-	height:500px;
+/* Lower Page */
+#quote{
+	margin-top:20px;
+	font-size:15px;
 }
