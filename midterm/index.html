@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <title> My Responsive Travel Site </title>
+      <!--
+        Author: Daniel Shabura
+        File: index.html
+        Date:10/12/2019
+        Project:Responsive Travel Site
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>International Travels</h1>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()"> More Links
+                            <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdown">
+					<a href="../index.html">Back to LAIN7</a>
+ 					<a href="https://en.wikipedia.org/wiki/Venice">Venice</a>
+					<a href="https://en.wikipedia.org/wiki/India">India</a>
+					<a href="https://en.wikipedia.org/wiki/Brazil">Brazil</a>       
+                    <a href="https://en.wikipedia.org/wiki/Dubai">Dubai</a>   
+                    <a href="https://en.wikipedia.org/wiki/Yugoslavia">Yugoslavia</a>   
+                    </div>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="packingtips.html">Packing Tips</a>
+				<a href="../index.html">Back to LAIN7</a>
+            </div>
+            <div class="navbarBurger">
+                <i class="fas fa-bars fa-2x" onclick="myXFunction()"></i>
+                <div class="navbarBurger-content" id="navbarBurger">
+					<a href="../index.html">Back to LAIN7</a>
+                    <a href="https://en.wikipedia.org/wiki/Venice">Venice</a>
+					<a href="https://en.wikipedia.org/wiki/India">India</a>
+					<a href="https://en.wikipedia.org/wiki/Brazil">Brazil</a>       
+                    <a href="https://en.wikipedia.org/wiki/Dubai">Dubai</a>   
+                    <a href="https://en.wikipedia.org/wiki/Yugoslavia">Yugoslavia</a>   
+					<a href="index.html">Home</a>       
+                    <a href="aboutus.html">About Us</a>   
+                    <a href="packingtips.html">Packing Tips</a>                      
+                </div>
+            </div>
+            
+            s
+            <script>
+				/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+				function myFunction() {
+				  document.getElementById("dropdown").classList.toggle("show");
+				}
+
+				// Close the dropdown if the user clicks outside of it
+				window.onclick = function(e) {
+				  if (!e.target.matches('.dropbtn')) {
+				  var dropdown = document.getElementById("dropdown");
+					if (dropdown.classList.contains('show')) {
+					  dropdown.classList.remove('show');
+					}
+				  }
+				}
+				
+				/*Hamburger, toggle between hiding and showing the dropdown content*/
+				function myXFunction() {
+				  document.getElementById("navbarBurger").classList.toggle("showX");
+				}
+				
+				window.onclick = function(event){
+				  if(!event.target.matches('.fas fa-bars fa-2x')){
+					var dropdowns = document.getElementsById("navbarBurger");
+					var i;
+					for(i = 0; i < dropdowns.length; i++){
+						var openDropdown = dropdowns[i];
+						if(openDropdown.classList.contains('showX')){
+						  openDropdown.classList.remove('showX');
+						}
+					}
+				  }
+				}            
+            </script>
+        </header>
+        <div class="grid-container">
+            <div id="box1">
+                <img src="images/hawaii.jpg" id="hawaiiimg" alt="hawaii_image">
+                <div class="description">
+                    <p> Hawaii, a perfect getaway location. One of our most popular destinations! Suspendisse tempor lectus non purus varius pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit justo sit amet neque blandit sodales. Aliquam eleifend dictum sem id porttitor. Duis nec bibendum augue. Nullam eros leo, posuere ut mauris nec, dignissim euismod odio. Suspendisse risus nisi, dapibus sit amet maximus in, vulputate non elit. Quisque commodo vel justo non porta.
+                    </p>
+                </div>
+            </div>
+            <div id="box2">
+                <img src="images/japan.jpg" id="japanimg" alt="japan_image">
+                <div class="description">
+                    <p> Known for its amazing scenery, Japan is a great destination to travel to! Suspendisse tempor lectus non purus varius pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit justo sit amet neque blandit sodales. Aliquam eleifend dictum sem id porttitor. Duis nec bibendum augue. Nullam eros leo, posuere ut mauris nec, dignissim euismod odio. Suspendisse risus nisi, dapibus sit amet maximus in, vulputate non elit. Quisque commodo vel justo non porta.
+                    </p>
+                </div>
+            </div>
+            <div id="box3">
+                <img src="images/france.jpg" id="franceimg" alt="france_image">
+                <div class="description">
+                    <p>The beautiful country of france is an amazing vacation spot for those on a budget! Suspendisse tempor lectus non purus varius pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit justo sit amet neque blandit sodales. Aliquam eleifend dictum sem id porttitor. Duis nec bibendum augue. Nullam eros leo, posuere ut mauris nec, dignissim euismod odio. Suspendisse risus nisi, dapibus sit amet maximus in, vulputate non elit. Quisque commodo vel justo non porta.
+                    </p>
+                </div>
+            </div>
+            <div id="box4">
+                <img src="images/Belber_Suitcase.jpg" id="suitcaseimg" alt="suitcase_image">
+                <div class="description">
+                    <p> Need help deciding what to pack? Read these handy Packing Tips!</p>
+                </div>
+            </div> 
+            <div id="box5">
+                <img src="images/people.jpg" id="peopleimg" alt="people_image">
+                <div class="description">
+                    <p>Curious about the friendly faces that work here at International Travels?<a href="aboutus.html"> Click Here</a> to view our Staff!</p>
+                </div>
+            </div>  
+            <div id="box6">
+                <img src="images/plane.jpg" id="planeimg" alt="plane_image">
+                <div class="description">
+                    <p>Really can't wait to go on a trip? Click here to book a flight!</p>
+                </div>
+            </div>              
+        </div>
+        
+        <footer>
+            <p>Contact Us: <a href="mailto:@otc.edu">ds0920006@otc.edu</a> | <a href="tel:417-444-4444">417.444.4444</a> &copy;International Travels</p>
+        </footer>
+        
+    </body>
+
+</html>

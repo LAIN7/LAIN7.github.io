@@ -33,3 +33,10 @@ p{
 	font-family: 'Be Vietnam', sans-serif;
 	color:white;
 }
+
+.v1{
+	position:absolute;
+	z-index:-1;
+	border-left:1000px solid #ff0000;
+	height:500px;
+}

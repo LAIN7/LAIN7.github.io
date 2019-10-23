@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <title> My Responsive Travel Site </title>
+      <!--
+        Author: Daniel Shabura
+        File: aboutus.html
+        Date:10/12/2019
+        Project:Responsive Travel Site
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>International Travels</h1>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()"> More Links
+                            <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdown">
+					<a href="../index.html">Back to LAIN7</a>
+ 					<a href="https://en.wikipedia.org/wiki/Venice">Venice</a>
+					<a href="https://en.wikipedia.org/wiki/India">India</a>
+					<a href="https://en.wikipedia.org/wiki/Brazil">Brazil</a>       
+                    <a href="https://en.wikipedia.org/wiki/Dubai">Dubai</a>   
+                    <a href="https://en.wikipedia.org/wiki/Yugoslavia">Yugoslavia</a>   
+                    </div>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="packingtips.html">Packing Tips</a>
+				<a href="../index.html">Back to LAIN7</a>
+            </div>
+            <div class="navbarBurger">
+                <i class="fas fa-bars fa-2x" onclick="myXFunction()"></i>
+                <div class="navbarBurger-content" id="navbarBurger">
+					<a href="../index.html">Back to LAIN7</a>
+                    <a href="https://en.wikipedia.org/wiki/Venice">Venice</a>
+					<a href="https://en.wikipedia.org/wiki/India">India</a>
+					<a href="https://en.wikipedia.org/wiki/Brazil">Brazil</a>       
+                    <a href="https://en.wikipedia.org/wiki/Dubai">Dubai</a>   
+                    <a href="https://en.wikipedia.org/wiki/Yugoslavia">Yugoslavia</a>   
+					<a href="index.html">Home</a>       
+                    <a href="aboutus.html">About Us</a>   
+                    <a href="packingtips.html">Packing Tips</a>                    
+                </div>
+            </div>
+            
+            
+            <script>
+				/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+				function myFunction() {
+				  document.getElementById("dropdown").classList.toggle("show");
+				}
+
+				// Close the dropdown if the user clicks outside of it
+				window.onclick = function(e) {
+				  if (!e.target.matches('.dropbtn')) {
+				  var dropdown = document.getElementById("dropdown");
+					if (dropdown.classList.contains('show')) {
+					  dropdown.classList.remove('show');
+					}
+				  }
+				}
+				
+				/*Hamburger, toggle between hiding and showing the dropdown content*/
+				function myXFunction() {
+				  document.getElementById("navbarBurger").classList.toggle("showX");
+				}
+				
+				window.onclick = function(event){
+				  if(!event.target.matches('.fas fa-bars fa-2x')){
+					var dropdowns = document.getElementsById("navbarBurger");
+					var i;
+					for(i = 0; i < dropdowns.length; i++){
+						var openDropdown = dropdowns[i];
+						if(openDropdown.classList.contains('showX')){
+						  openDropdown.classList.remove('showX');
+						}
+					}
+				  }
+				}            
+            </script>
+        </header>
+        <div class="grid-container">
+            <div id="manbox1">
+                <img src="images/man.jpg" alt="businessman_image">
+                <div class="description">
+                    <p>Biz Bismann, Professional Businessman and CEO of International Travels.
+                </div>
+            </div>
+            <div id="womanbox2">
+                <img src="images/woman.jpg" alt="businesswoman_image">
+                <div class="description">
+                    <p>Liz Lizmahn, Professional Employee.
+                    </p>
+                </div>
+            </div>
+            <div id="planebox3">
+                <img src="images/planesil.jpg" alt="plane">
+                <div class="description">
+                    <p> Plane Planeman. Expert in Aviation and our main method in transporting fliers to their destination!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Contact Us: <a href="mailto:@otc.edu">ds0920006@otc.edu</a> | <a href="tel:417-444-4444">417.444.4444</a> &copy;International Travels</p>
+        </footer>
+        
+    </body>
+
+</html>

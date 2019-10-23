@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <title> My Responsive Travel Site </title>
+      <!--
+        Author: Daniel Shabura
+        File: packingtips.html
+        Date:10/12/2019
+        Project:Responsive Travel Site
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>International Travels</h1>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()"> More Links
+                            <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="dropdown">
+					<a href="../index.html">Back to LAIN7</a>
+ 					<a href="https://en.wikipedia.org/wiki/Venice">Venice</a>
+					<a href="https://en.wikipedia.org/wiki/India">India</a>
+					<a href="https://en.wikipedia.org/wiki/Brazil">Brazil</a>       
+                    <a href="https://en.wikipedia.org/wiki/Dubai">Dubai</a>   
+                    <a href="https://en.wikipedia.org/wiki/Yugoslavia">Yugoslavia</a>   
+                    </div>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="packingtips.html">Packing Tips</a>
+				<a href="../index.html">Back to LAIN7</a>
+            </div>
+            <div class="navbarBurger">
+                <i class="fas fa-bars fa-2x" onclick="myXFunction()"></i>
+                <div class="navbarBurger-content" id="navbarBurger">
+					<a href="../index.html">Back to LAIN7</a>
+                    <a href="https://en.wikipedia.org/wiki/Venice">Venice</a>
+					<a href="https://en.wikipedia.org/wiki/India">India</a>
+					<a href="https://en.wikipedia.org/wiki/Brazil">Brazil</a>       
+                    <a href="https://en.wikipedia.org/wiki/Dubai">Dubai</a>   
+                    <a href="https://en.wikipedia.org/wiki/Yugoslavia">Yugoslavia</a>   
+					<a href="index.html">Home</a>       
+                    <a href="aboutus.html">About Us</a>   
+                    <a href="packingtips.html">Packing Tips</a>
+                </div>
+            </div>
+            <script>
+				/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+				function myFunction() {
+				  document.getElementById("dropdown").classList.toggle("show");
+				}
+
+				// Close the dropdown if the user clicks outside of it
+				window.onclick = function(e) {
+				  if (!e.target.matches('.dropbtn')) {
+				  var dropdown = document.getElementById("dropdown");
+					if (dropdown.classList.contains('show')) {
+					  dropdown.classList.remove('show');
+					}
+				  }
+				}
+				
+				/*Hamburger, toggle between hiding and showing the dropdown content*/
+				function myXFunction() {
+				  document.getElementById("navbarBurger").classList.toggle("showX");
+				}
+				
+				window.onclick = function(event){
+				  if(!event.target.matches('.fas fa-bars fa-2x')){
+					var dropdowns = document.getElementsById("navbarBurger");
+					var i;
+					for(i = 0; i < dropdowns.length; i++){
+						var openDropdown = dropdowns[i];
+						if(openDropdown.classList.contains('showX')){
+						  openDropdown.classList.remove('showX');
+						}
+					}
+				  }
+				}            
+            </script>
+        </header>
+        <div class="aside">
+          <section class="aside-1">
+            <h4>Here I would put</h4>
+            <p>Specific brands for stuff to bring </p>
+          </section>
+		  
+
+		  <section class="aside-2">
+            <h4>Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </section>
+            
+		  <section class="aside-3">
+            <h4>Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </section>
+            
+		  <section class="aside-4">
+            <h4>Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </section>          
+        </div>
+        
+        <div class="mobileaside">
+            <section class="mobileasidetext">
+                
+                <h3>The combined product texts here:</h3>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet, nisi non bibendum fermentum, urna purus mattis mi, in semper magna elit vitae nulla. Morbi velit velit, porta pellentesque posuere nec, varius a diam. Integer et volutpat ante, a pulvinar turpis. Proin ex libero, condimentum ac congue ac, ullamcorper eget nibh. Nunc eget volutpat leo. In hac habitasse platea dictumst. Etiam nec porta libero, non ullamcorper mauris. Curabitur vel mi et nisi tempor pharetra. Sed laoreet vitae ligula ut sollicitudin. Ut sollicitudin leo vitae tempus venenatis. Maecenas nunc tortor, rhoncus a suscipit et, ultricies ac mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</h5>
+                
+            </section>
+        
+        </div>
+        <div class="gridcontainerpacking">
+            <div>
+                <img src="images/Belber_Suitcase.jpg" alt="suitcase_image">
+                <h1>Suitcase</h1>
+                <h2>A suitcase is a very important item to bring on any trip!</h2>
+            </div>
+            <div>
+                <img src="images/camera.jpg" alt="camera_image">
+                <h1>Camera</h1>
+                <h2>Be sure to bring a good camera with you, to record all the fun memories you will make!</h2>
+            </div>            
+            <div>
+                <img src="images/sunscreen.jpg" alt="sunscreen_image">
+                <h1>Sunscreen</h1>
+                <h2>If you'll be out having fun in the sun, be sure to bring some sunscreen with you, to protect yourself from any harmful sunburns!</h2>
+            </div>
+            <div>
+                <img src="images/wallet.jpg" alt="wallet_image">
+                <h1>Spending Money</h1>
+                <h2>If you plan on staying more than a few days, it is important to bring some extra spending money!</h2>
+            </div>           
+        </div>
+        
+        <footer>
+            <p>Contact Us: <a href="mailto:@otc.edu">ds0920006@otc.edu</a> | <a href="tel:417-444-4444">417.444.4444</a> &copy;International Travels</p>
+        </footer>
+        
+    </body>
+
+</html>
