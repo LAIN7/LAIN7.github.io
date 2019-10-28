@@ -1,0 +1,93 @@
+#mediadiv{
+    display:none;
+}
+
+
+body{
+	/*background-color:rgb(255,198,153);*/
+    background-color: #EDEDED;
+    margin:25px 0px 0px 25px;
+}
+#schedulediv{
+    margin:auto;
+    position:fixed;
+}
+
+.studentinfo{
+    float:right;
+    margin:auto;
+}
+.studentname{
+    background-color:#FDD563;
+}
+.status{
+    /*background-color:#FDD563;*/
+    background-color:#E6172F;
+}
+.studentid{
+    background-color:#C6DE8C;
+}
+
+
+
+
+#headername1,#headername{
+    background-color:#7491A4;
+}
+
+.hours{
+    background-color:#BFD0DA;
+}
+table{
+    margin:auto;
+}
+
+th,td{
+    border:1px solid black;
+    padding:10px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px;
+}
+.upload{
+    background-color: #C6DE8C;
+}
+.download{
+    background-color:#FF7777;
+}
+.sync{
+    background-color:#FDD563;
+}
+.recreation{
+    /*background-color:#B9D6F3*/
+    background-color:#B9D6F3
+}
+.inclass{
+    /*background-color:#a7bd73;*/
+    background-color: #F1E8D9;
+}
+
+@media only screen and (max-width: 1650px) {
+    .studentinfo{
+        float:left;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #schedulediv{
+        display:none;
+    }
+    #mediadiv{
+        display: block;
+    }
+    .studentinfo{
+        float:left;
+    }
+    th,td{
+    border:1px solid black;
+    padding:2px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px;
+    }
+    table{
+    margin: auto;
+    }
+}
