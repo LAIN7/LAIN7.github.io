@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <title> My Responsive Travel Site </title>
+      <!--
+        Author: Daniel Shabura
+        File: book.html
+        Date:11/16/2019
+        Project:Responsive Travel Site
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+        <link rel="stylesheet" href="../reset.css" />
+        <link rel="stylesheet" href="../styles.css" />
+		<script src="modernizr.custom.40753.js"></script>
+		<script src="respond.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+  <form action="results.html" method="get">
+	<fieldset>
+		<legend>Contact Information</legend><br>
+		Name:<br>
+		<input type="text" name="Full Name "><br>
+		Email:<br>
+		<input type="text" name="Email"><br>
+		Phone:<br>
+		<input type="text" name="Phone">
+	</fieldset>
+	<fieldset>
+		<legend>Reservation Information</legend><br>
+		
+		<fieldset>
+			<legend>Schedule</legend><br>
+			Check-in Month:
+			<select id = "monthsList">
+				<option value="january">January</option>
+				<option value="february">February</option>
+				<option value="march">March</option>
+				<option value="april">April</option>
+				<option value="may">May</option>
+				<option value="june">June</option>
+				<option value="july">July</option>
+				<option value="august">August</option>
+				<option value="september">September</option>
+				<option value="october">October</option>
+				<option value="november">November</option>
+				<option value="december">December</option>
+			</select>
+			<br>
+			Check-in Day:
+			<select id = "checkinDay">
+				<option value="01">1</option>
+				<option value="02">2</option>
+				<option value="03">3</option>
+				<option value="04">4</option>
+				<option value="05">5</option>
+				<option value="06">6</option>
+				<option value="07">7</option>
+				<option value="08">8</option>
+				<option value="09">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21/option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			<br>
+			Check-in Year:
+			<select id = "checkinYear">
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+			</select>
+			<br>
+			Number of nights:
+			<select id="numberofNights">
+				<option value="01">1</option>
+				<option value="02">2</option>
+				<option value="03">3</option>
+				<option value="04">4</option>
+				<option value="05">5</option>
+				<option value="06">6</option>
+				<option value="07">7</option>
+				<option value="08">8</option>
+				<option value="09">9</option>
+				<option value="10">10</option>
+			</select>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Destination</legend>
+			<input type="radio" name="destination">TEST
+			<input type="radio" name="destination">TEST2
+			<input type="radio" name="destination">TEST3
+			<input type="radio" name="destination">TEST4
+			<input type="radio" name="destination">TEST5
+			<input type="radio" name="destination">TEST6
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Reason For Visiting</legend>
+			<input type="radio" name="destreason">Vacation
+			<input type="radio" name="destreason">Honeymoon
+			<input type="radio" name="destreason">Other
+		</fieldset>
+	</fieldset>
+	<br>
+	<fieldset>
+		<legend>Additional Information</legend>
+		<label for="feedback" style="font-size:10px">Feedback, Special Requests, etc</label>
+		<textarea rows="10" cols="2" id="feedback">
+		</textarea>
+	</fieldset>
+	<input value="text" type="submit"/>
+		
+  </form>
+</body>
+</html>

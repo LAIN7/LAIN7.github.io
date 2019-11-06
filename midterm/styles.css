@@ -8,6 +8,7 @@ Project:Responsive Travel Site
 
 body{
     font-family: 'Poiret One', cursive;
+	color:white;
     background-image: url(images/background.jpg);
     background-repeat:repeat;
     background-size:100%;
@@ -298,4 +299,11 @@ footer, a:link{
         text-align:center;
         grid-template-columns: repeat(1,1fr);
     } 
+}
+
+textarea{
+	width:100%;
+}
+form{
+	font-size:2em;
 }
