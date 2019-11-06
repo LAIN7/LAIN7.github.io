@@ -1,22 +1,28 @@
-#mediadiv{
-    display:none;
-}
+/* 
+	NAME:DANIEL SHABURA
+	ASSIGNMENT:SCHEDULE
+	FILE:styles.css
+	DATE:10.28.2019;
+	
+*/
 
 
 body{
 	/*background-color:rgb(255,198,153);*/
     background-color: #EDEDED;
-    margin:25px 0px 0px 25px;
+    margin:0px 0px 0px 0px;
 }
-#schedulediv{
-    margin:auto;
-    position:fixed;
+h1{
+	text-align:center;
+	font-size:40px;
 }
 
-.studentinfo{
-    float:right;
-    margin:auto;
+#schedulediv{
 }
+
+
+/* Student Info Table */
+/* Table Colors */
 .studentname{
     background-color:#FDD563;
 }
@@ -31,23 +37,33 @@ body{
 
 
 
-#headername1,#headername{
+#headername{
     background-color:#7491A4;
 }
 
-.hours{
-    background-color:#BFD0DA;
-}
-table{
-    margin:auto;
-}
 
-th,td{
+
+/* Main Table */
+table, th{
+	width:100%;
+	margin:auto;
     border:1px solid black;
-    padding:10px;
+    padding:2px;
     background-color: aliceblue;
     box-shadow: 2px 2px;
 }
+td{
+	overflow:hidden;
+	margin:auto;
+    border:1px solid black;
+    padding:2px;
+    background-color: aliceblue;
+    box-shadow: 2px 2px;
+}
+.hours{
+    background-color:#BFD0DA;
+}
+/* Table Colors */
 .upload{
     background-color: #C6DE8C;
 }
@@ -66,28 +82,9 @@ th,td{
     background-color: #F1E8D9;
 }
 
-@media only screen and (max-width: 1650px) {
-    .studentinfo{
-        float:left;
-    }
-}
-@media only screen and (max-width: 1200px) {
-    #schedulediv{
-        display:none;
-    }
-    #mediadiv{
-        display: block;
-    }
-    .studentinfo{
-        float:left;
-    }
-    th,td{
-    border:1px solid black;
-    padding:2px;
-    background-color: aliceblue;
-    box-shadow: 2px 2px;
-    }
-    table{
-    margin: auto;
-    }
+#testflex{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	
 }
