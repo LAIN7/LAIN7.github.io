@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Toto's Training Tutorials</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/ico">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+    
+    
+<body>
+    <!-- Header Content -->
+    <header>
+        <h1>Toto's Training Tutorials</h1>
+        <!-- Dropdown Menu -->
+        <div class="navbar">
+                <div class="dropdown">
+                    <!--Dropdown Button-->
+                    <button class="dropbtn" onclick="myFunction()">Click Here For More Training Tutorials!
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <!-- Button Links -->
+                    <div class="dropdown-content" id="dropdown">
+ 					<a href="tutorials.html">Dolphins</a> 
+                    <a href="index.html">Home</a> 
+                    </div>
+                </div>
+            <!-- Links shown inside the header but outside the button -->
+                <a href="index.html">Home</a>
+                <a href="index.html">About Us</a>
+                <a href="index.html">Hire Us!</a>
+            </div>
+        
+        <!-- Hamburger Button for mobile screens -->
+            <div class="navbarBurger">
+                <i class="fas fa-bars fa-2x" onclick="myXFunction()"></i>
+                <!-- hamburger links -->
+                <div class="navbarBurger-content" id="navbarBurger">
+                    <a href="tutorials.html">Dolphins</a> 
+                    <a href="index.html">Home</a>                     
+                </div>
+            </div>
+        <!-- script that makes the buttons functional -->
+            <script>
+				/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+				function myFunction() {
+				  document.getElementById("dropdown").classList.toggle("show");
+				}
+
+				// Close the dropdown if the user clicks outside of it
+				window.onclick = function(e) {
+				  if (!e.target.matches('.dropbtn')) {
+				  var dropdown = document.getElementById("dropdown");
+					if (dropdown.classList.contains('show')) {
+					  dropdown.classList.remove('show');
+					}
+				  }
+				}
+				
+				/*Hamburger, toggle between hiding and showing the dropdown content*/
+				function myXFunction() {
+				  document.getElementById("navbarBurger").classList.toggle("showX");
+				}
+				
+				window.onclick = function(event){
+				  if(!event.target.matches('.fas fa-bars fa-2x')){
+					var dropdowns = document.getElementsById("navbarBurger");
+					var i;
+					for(i = 0; i < dropdowns.length; i++){
+						var openDropdown = dropdowns[i];
+						if(openDropdown.classList.contains('showX')){
+						  openDropdown.classList.remove('showX');
+						}
+					}
+				  }
+				}            
+            </script>
+    </header>
+    <div class="content">
+        <img src="images/dolphinjump.jpeg">
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel nulla a augue mollis sagittis. Nullam tristique nunc urna, sed sodales urna dictum vitae. Etiam eget malesuada massa. In viverra dui id dolor porta malesuada. Vestibulum euismod ligula laoreet augue eleifend, laoreet tincidunt velit egestas. Praesent condimentum consectetur neque vitae euismod. Nulla nec tortor faucibus, placerat velit in, sodales nisi. Maecenas aliquet ligula et placerat condimentum.
+
+Mauris molestie molestie ligula, nec porta arcu pellentesque et. Vestibulum gravida metus varius tristique imperdiet. Aenean at purus ut ante congue interdum non at magna. Pellentesque sagittis rutrum lectus eu sodales. Etiam id ex ut tellus blandit luctus. Pellentesque sed nibh ac nunc eleifend sagittis. In iaculis bibendum metus rhoncus varius. Donec vitae posuere leo, a</p>
+</body>
+</html>

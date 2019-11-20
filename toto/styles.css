@@ -1,0 +1,142 @@
+/*
+Author: Daniel Shabura
+File: styles.css
+Date:11/19/2019
+Project:Totos Training Tutorials
+*/
+
+
+body{
+    background-color:#EC7063;
+}
+
+/*Header Styles*/
+header{
+    text-align: center;
+    background-color:#D4665A;
+    padding:1em;
+}
+h1{
+    font-size:4em;
+    color:White;
+}
+button{
+    text-decoration: none;
+    border-style:outset;
+}
+/*Nav Styles*/
+.navbar {
+    color:white;
+	overflow: hidden;
+	background-color: inherit;
+}
+/*Links inside the header but outside the buttons */
+.navbar a {
+	float:left;
+	font-size: 1.5em;
+	color: inherit;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/* button styles */
+/* dropdown container*/
+.dropdown {
+	float: right;
+	overflow: hidden;
+    
+}
+.dropdown a{
+    float:none;
+    text-align: center;
+}
+/* the actual clickable button */
+.dropbtn {
+	font-size: 1em;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+
+}
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+}
+.dropdown-content, #navbarBurger {
+	display: none;
+	position: absolute;
+	background-color: rgba(212,102,90,.5);
+    box-shadow: 10px 10px 20px #994238;
+	min-width: 315px;
+}
+.dropdown-content a, #navbarBurger a {
+    font-size:2em;
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.dropdown-content a:hover, #navbarBurger a:hover {
+	background-color: skyblue;
+}
+.show {
+  display: block;
+}
+ 
+#navbarBurger, .navbarBurger {
+	display: none;
+}
+
+
+
+.showX, .navbarBurger{
+    display:none!important;
+}
+
+
+
+/* Index Page */  
+.content{
+    margin-left:700px;
+}
+.content img{
+    max-height: 100%;
+    max-width:35%;
+}
+p{
+    margin:auto 50px auto 50px;
+    font-size: 2em;
+    color:white;
+}
+
+
+
+
+@media only screen and (max-width: 850px) {
+    
+    header h1{
+        font-size:2em;
+    }
+    
+}
+
+
+@media screen and (max-width: 580px) {
+
+	/* Dropdown Button On Hover & Focus */
+	#navbarBurger{
+		padding: 12px; 
+		overflow: hidden;
+	}
+	#navbarBurger a {
+		padding: 15px;
+	}
+
+    /* drop down menu for desktop disappears */
+	.navbar {
+		display: none;
+	}
+	
+	.showX, .navbarBurger {
+	  display: block !important;
+	}
+}
