@@ -1,0 +1,18 @@
+/*
+Name: Daniel Shabura
+Date:12/10/2019
+Assignment:Final
+File:printstyles.css
+*/
+html{
+    text-decoration: none;
+}
+.jumbotron{
+    display:none;
+}
+img{
+    display:none;
+}
+iframe{
+    display:none;
+}
